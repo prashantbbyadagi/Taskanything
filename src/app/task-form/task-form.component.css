@@ -1,0 +1,98 @@
+input[type="text"] {
+  width: 298pt;
+  height: 25pt;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border: none;
+  margin: 4pt;
+  margin-left: 24pt;
+  margin-right: 25pt;
+  padding-left: 28pt;
+  align-items: center;
+}
+.btn {
+  margin-left: -100pt;
+  background-color: #30c16f;
+  height: 22pt;
+  width: 68pt;
+  border-radius: 5pt;
+  border: none;
+  color: whitesmoke;
+  margin-top: 6pt;
+}
+.fa-search {
+  margin-left: -287pt;
+  /* background-color: #30C16F; */
+  width: 25pt;
+  margin-top: 12pt;
+}
+sup {
+  margin: -360pt;
+  padding-top: 10pt;
+}
+
+hr {
+  width: 175pt;
+  margin-right: 1500pt;
+}
+.checkboxes {
+  margin-left: 65pt;
+}
+.icon1 {
+  position: relative;
+  margin-right: 10pt;
+}
+img {
+  width: 80pt;
+}
+section {
+  position: relative;
+}
+.card1 {
+  background-color: #f9f9f9;
+  
+  border: 1pt double black;
+  border-radius: 5pt;
+  
+  margin-bottom: 20pt;
+}
+.div1 {
+  width: 157pt;
+  text-align: center;
+  background-color: darkgrey;
+  border: whitesmoke;
+}
+.button {
+  margin-top: 10pt;
+  height: 25pt;
+  border-radius: 5pt;
+  background-color: #30c16f;
+  border-style: none;
+  width: 472pt;
+  color: aliceblue;
+}
+
+.divis {
+  border: 2pt double whitesmoke;
+}
+.supscri
+{
+  margin-left:-950pt;
+  margin-top: 19pt;
+}
+.supscri2
+{
+  margin-left: 340pt;
+  margin-top: 75pt;
+  color: #30c16f;
+}
+.icon2
+{
+  margin-top: 74pt;
+  margin-left: 5pt;
+}
+.icons
+{
+  margin-top: 15pt;
+  margin-left: 20pt;
+}

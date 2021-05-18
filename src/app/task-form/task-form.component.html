@@ -1,0 +1,119 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+  integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+  crossorigin="anonymous"
+></script>
+
+<section>
+  <div class="d-flex flex-wrap align-items-center">
+    <div class="col-12">
+      <div class="d-flex flex-wrap container mb-5">
+        
+        <input type="text" placeholder="Search tasks by subrub"  />
+        
+        <input type="text" class="form-control" placeholder="Search tasks by name"[(ngModel)]="searchcontent" (input)="UserInput($event)">
+        <button class="btn"(click)="searchingContent()" >Search</button><i class="fas fa-search"></i>
+      </div>
+    </div>
+    <p class="supscri">To find tasks near you enter your subrub above</p>
+    <div class="supscri2">Date-Newest first</div>
+    <i class="fas fa-sort-down icon2"></i>
+  
+    <div class="d-flex flex-row flex-wrap container">
+      <div class="col-md-3">
+        <h4><b>Task status</b></h4>
+        <hr />
+        <input type="checkbox" class="border" />
+          Open
+        <br />
+        <input type="checkbox" /> Close
+        <br />
+        <input type="checkbox" /> Completed 
+        <br />
+        <br />
+        <h4><b>category</b></h4>
+        <hr />
+        <input type="checkbox" /> Cleaning
+        <br />
+        <input type="checkbox" /> Gardening
+        <br />
+        <input type="checkbox" /> Handyman
+        <br />
+        <input type="checkbox" /> Other
+        <br />
+        <input type="checkbox" /> Removelist
+        <br />
+        <hr />
+        <h4><b>Location</b></h4>
+        <input type="checkbox" /> Online
+      </div>
+      
+      <div class="col-9">
+        <div
+          class="d-flex  flex-row  card1 "
+          *ngFor="let details of json1.data"
+        >
+        <!-- {{details.name | json }}
+        {{details.name }} -->
+          <div class="">
+            <div class="container d-flex ">
+              <div class="col-2 justify-content-center rounded-left">
+              
+                <img
+                  [src]="
+                    details.profileImg
+                      ? details.profileImg
+                      : 'https://www.dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg'"
+                  alt=""
+                  srcset=""
+                />
+                <p class="justify-content-center">{{ details?.postedBy }}</p>
+              </div>
+              <div>
+                <h3>{{ details?.name }}</h3>
+                <p>{{ details?.description }}</p>
+                <div class="d-flex col-12">
+                  <div class="col-sm-4 divis">
+                    <p>{{ details?.offers }}</p>
+                    <p>{{ details?.comments }}</p>
+                  </div>
+                  <div class="col-sm-4 divis">
+                    <h3>{{ details?.budget }}</h3>
+                  </div>
+                  <div class="col-sm-4 divis">
+                    <p>{{ details?.location }}</p>
+                    <p>{{ details?.publishedOn }}</p>
+                  </div>
+                </div>
+                <button class="rtl button mb-3">Open for Offers</button>
+              </div>
+              <br />
+            </div>
+         </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
